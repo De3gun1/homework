@@ -1,0 +1,5 @@
+import file1
+
+result = file1.square(5, 2)
+
+print(result)

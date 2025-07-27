@@ -1,21 +1,4 @@
-# Unfinished
-print("bye1")
+def square(a, b):
+    return(a ** b)
 
-# Unfinished
-print("bye2")
-
-
-# Unfinished
-print("bye3")
-
-
-# Done
-print("hello")
-
-
-# Unfinished
-print("bye")
-
-
-# Unfinished
-print("bye")
+print(square(2, 5))
