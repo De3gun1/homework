@@ -1,3 +1,3 @@
-from file1 import square
+from file1 import minus
 
-print(square(a=5, b=2))
+print(minus(5, 2))
