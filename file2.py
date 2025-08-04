@@ -5,7 +5,7 @@ result = square(a=5, b=2)
 
 if result == 25:
     print(result)
-    print(nothing)
+    print(nothing())
 else:
     pass
 
