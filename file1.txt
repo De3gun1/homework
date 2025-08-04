@@ -1,4 +1,3 @@
 version 1:
 ---------
-jeez crist
 hi :)
