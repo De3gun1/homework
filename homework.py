@@ -65,8 +65,6 @@ def secret1(a):
 
 # Запускает калькулятор
 def calc():
-    import re
-    
     sentence = input("Enter your math sentence (with only two numbers): ").strip()
     
     number1, symbol, number2 = sentence.split(" ")
@@ -83,24 +81,24 @@ def calc():
         print("Your second number is not acceptable. Try again.")
         return calc()
     
-    if re.search(r"^.+(\+)?|(-)?|(\*)?|(\*\*)?|(/)?|(//)?|(%)?$", symbol):
-        if symbol == "+":
-            return number1 + number2
-        elif symbol == "-":
-            return number1 - number2
-        elif symbol == "*":
-            return number1 * number2
-        elif symbol == "**":
-            return number1 ** number2
-        elif symbol == "/":
-            return number1 / number2
-        elif symbol == "//":
-            return number1 // number2
-        elif symbol == "%":
-            return number1 % number2   
-        else:
-            print("Your math symbol is not acceptable. Try again.")
-            return calc()
+
+    if symbol == "+":
+        return number1 + number2
+    elif symbol == "-":
+        return number1 - number2
+    elif symbol == "*":
+        return number1 * number2
+    elif symbol == "/":
+        return number1 ** number2
+    elif symbol == "**":
+        return number1 / number2
+    elif symbol == "//":
+        return number1 // number2
+    elif symbol == "%":
+        return number1 % number2   
+    else:
+        print("Your math symbol is not acceptable. Try again.")
+        return calc()
 
 
 if __name__ == "__main__":
